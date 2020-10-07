@@ -7,6 +7,6 @@ const ComponentsScreen =()=>{
 
 const styles = StyleSheet.create({
     textStyle:{
-        fontSize: 30s
+        fontSize: 30
     }
 })

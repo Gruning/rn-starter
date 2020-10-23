@@ -3,6 +3,7 @@ import { Text, StyleSheet, View } from 'react-native'
 
 const ComponentsScreen =()=>{
     const medio= 'youtube'
+    const outerJsxElement = <Text>R.C.Martin Talk in MDF</Text>
     return (
         <View>
             <Text style={styles.textStyle}>Precalculo</Text>
@@ -14,6 +15,7 @@ const ComponentsScreen =()=>{
             <Text>buscar youtube</Text>
             <Text style={styles.textStyle}>Curso C++</Text>
             <Text>buscar en  {medio} tutoriales POO C++</Text>
+            {outerJsxElement}
         </View>
 
     )

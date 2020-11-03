@@ -3,10 +3,10 @@ import {View, Text,StyleSheet, FlatList} from 'react-native'
 
 const ListScreen = ()=> {
     const friends =[
-        {name:'chandler'},
-        {name:'monica'},
-        {name:'joey'},
-        {name:'rachel'},
+        {name:'chandler',key:'1'},
+        {name:'monica',key:'2'},
+        {name:'joey',key:'3'},
+        {name:'rachel',key:'4'},
 
     ]
      return (

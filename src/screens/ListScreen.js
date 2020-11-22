@@ -3,20 +3,20 @@ import {View, Text,StyleSheet, FlatList} from 'react-native'
 
 const ListScreen = ()=> {
     const friends =[
-        {name:'chandler'},
-        {name:'monica'},
-        {name:'joey'},
-        {name:'rachel'}
+        {name:'Chandler', age:25},
+        {name:'Monica',age: 26},
+        {name:'Joey', age:24},
+        {name:'Rachel', age:27},
+        {name:'Ross', age:30}
 
     ]
      return (
      <FlatList 
-        horizontal
-        showHorizontalScrollbarIndicator={false}
+        // horizontal
+        // showHorizontalScrollbarIndicator={false}
         keyExtractor={friend => friend.name} 
         data={friends}
-        renderItem={({item})=>
-            {return <Text style={styles.textStyle}>{item.name}</Text>}}
+        renderItem={({item})=>{return <Text style={styles.textStyle}>{item.name} - Age  {item.age}</Text>}}
     />)
      
 }

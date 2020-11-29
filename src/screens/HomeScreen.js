@@ -3,8 +3,11 @@ import { Text, StyleSheet,View, Button } from "react-native";
 
 const HomeScreen = () => {
   return <View>
-      <Text style={styles.text}>Hello React Native</Text>
-      <Button title="Go to Componnents Demo"/>
+      <Text style={styles.text}>Hi there</Text>
+      <Button 
+        onPress={()=>console.log('button pressed')}
+        title="Go to Componnents Demo"
+      />
   </View> 
 };
 
